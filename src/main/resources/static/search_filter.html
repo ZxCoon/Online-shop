@@ -1,0 +1,218 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="trackbar/trackbar.css" /> 
+</head>
+<body>
+<div class="block-body">
+    <header>
+        <div class="header-top">
+            <ul id="header-top-menu">
+                <li id="account-name"></li>
+                <li><a href="#">Мій профіль</a></li>
+                <li><a id="logout" href="#">Вийти</a></li>
+            </ul>
+             <a id="cart-ref" href="cart.html?action=onclick"></a>
+        <!--Вхід і реєстрація-->            
+            <p id="reg-auto-title" align="right"><a href="registration.html" class="top-auth">Реєстрація</a><button  id="enterMenu" class="top-auth">Вхід</button></p>
+            <div id="block-top-auth">
+                    
+                 <form >
+                     
+                     <ul id="input-email-pass">
+                        <h3>Вхід</h3> 
+                        <p id="message-auth">
+                            Невірний логін і(або) пароль
+                        </p>
+                         <li><center><input type="text" id="auth-login" placeholder="Логін чи Email"></center></li>
+                         <li><center><input type="password" id="auth-pass" placeholder="Пароль"></center></li>
+                         <li><a href="#" id="remind-pass">Забули пароль?</a></li>
+                         <input type="button" id="btnEnter" value="Вхід">
+                     </ul>
+                     
+                 </form>               
+                
+            </div>    
+        </div>         
+        <div id="top-line"></div>
+        
+        <a href="main.html"><img id="img-logo" src="/images/logo.png" alt=""></a>
+        
+        <div class="personal-info">
+            <p >Some text</p>
+            <h3 > 380996565556</h3>
+            <img src="/images/phone-icon.jpg" alt="">
+            <p >Режим роботи</p>
+            <p >Будні:   </p>
+            <p >Неділя вихідний</p>
+            <img id="time-logo" src="/images/time-icon.png" alt="">
+           
+        </div>
+
+    </header>
+    <div class="search-block">
+        <h1>Пошук запчастин</h1>
+        <ul class="tabs" data-tabs id="search-tabs">
+              <li id="search-by-car-model" class="tabs-title is-active"><a href="#react-tabs_1-1" aria-selected="true">by Car</a></li>
+              <li id="search-by-value" class="tabs-title"><a data-tabs-target="react-tabs_2-1" href="#react-tabs_2-1">by Number</a></li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="search-tabs">
+           
+            <div class="tabs-panel is-active"  id="react-tabs_1-1">
+                  <div class="tab-panel-inner">
+                      <div class="search-by-car-wrapper">
+                          <div class="choose-car">
+                              <div class="car-toggler">
+                                  <button name type="button"><span>Марка</span>
+                                  </button>
+                              </div>
+                              <div class="car-toggler">
+                                  <button name type="button"><span>Модель</span></button>
+                              </div>
+                                 <div class="car-toggler">
+                                  <button name type="button"><span>Тип запчастини</span></button>
+                              </div>
+                              <button name type="button" class="search-icon">
+                                Пошук
+                              </button>
+                              
+                          </div>
+                      </div>
+                  </div>
+            </div>
+            <div class="tabs-panel" id="react-tabs_2-1" >
+                  <div class="tab-panel-inner">
+                      <div class="tab-panel-title">Введіть номер або назву запчастини</div>
+                          <form class="search-form">
+                      
+                              <input id="search-input" placeholder="Введіть номер або назву запчастини..." value="">
+                            
+                              <a id="search-submit">Find</a>
+                          </form>
+                      </div>
+              </div>  
+               
+        </div>
+       
+        
+    </div>
+    <div class="content">
+        
+        <nav>
+            <div class="block-category">
+                <p class="header-title">Категорії товарів</p>
+                    <ul >
+                        <li><a id="select-category1">Автозапчастини</a> 
+                            <ul class="category-section" id="category-section1">
+                                <li><a href="view_part.html?cat=autoparts"><strong>Всі деталі</strong></a></li>
+                                <li><a href="view_part.html?cat=autoparts&partId=100" class="section-search">Двигун</a></li>
+                                <li><a href="view_part.html?cat=autoparts&partId=101" class="section-search">Паливна система</a></li>
+                                <li><a href="view_part.html?cat=autoparts&partId=102" class="section-search">Система випуску газів</a></li>
+                                <li><a href="view_part.html?cat=autoparts&partId=103" class="section-search">Охолодження</a></li>
+                                <li><a href="view_part.html?cat=autoparts&partId=104" class="section-search">Трансмісія</a></li>
+                                <li><a href="view_part.html?cat=autoparts&partId=105" class="section-search">Гальмівна система</a></li>
+                                <li><a href="view_part.html?cat=autoparts&partId=106" class="section-search">Коробка передач</a></li>
+                                <li><a href="view_part.html?cat=autoparts&partId=107" class="section-search">Рульове керування</a></li>
+                            </ul>   
+                        </li>
+                        <li><a id="select-category2">Аксесуари</a>  
+                            <ul class="category-section" id="category-section2">
+
+                            </ul>   
+                        </li>
+                        <li><a id="select-category3">Автохімія</a>  
+                            <ul class="category-section" id="category-section3">
+
+                            </ul>   
+                        </li>
+                        <li><a id="select-category4">Аккумулятори</a>   
+                            <ul class="category-section" id="category-section4">
+                            </ul>   
+                        </li>
+                    </ul>
+                
+            </div>
+            <div class="block-parameter">
+                <p class="header-title">Пошук по параметрам</p>
+                <p class="title-filter">Ціна</p>
+                
+                <form action="">
+                    <div class="block-input-price">
+                        <ul>
+                            <li>від</li>
+                            <li><input type="text" id="start-price" name="start_price" value="1"></li>
+                            <li>до</li>
+                            <li><input type="text" id="final-price" name="final_price" value="99999"></li>
+                            <li>грн.</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="block-trackbar"></div>
+                    
+<!--
+                    <p class="title-filter">Марка</p>
+                    <ul class="checkbox-brand">
+                        <li><input type="checkbox" id="check_brand1"><label for="check-brand1">ВАЗ</label></li>
+                        <li><input type="checkbox" id="check_brand2"><label for="check-brand2">Волга</label></li>
+                        <li><input type="checkbox" id="check_brand3"><label for="check-brand3">ЗиЛ</label></li>  
+                    </ul>
+-->
+                    
+                    <a id="button-param-search">Пошук</a>
+                </form>  
+                
+                
+            </div>
+        </nav>
+        
+        <div class="content-right">
+            <div class="block-sorting">
+               <p id="homepage"></p>
+              
+              <ul id = "options-list">
+                 <li>Сортування: </li>
+                  <li><a id="select-sort"></a>
+                      <ul id= "sorting-list"> 
+                      </ul>  
+                  </li> 
+                  <li>Показати елементи: </li>
+                  <li><a id="page-size-sort"></a>
+                      <ul id= "page-size-list"> 
+                      
+                      </ul>  
+                  </li> 
+              </ul> 
+           </div> 
+           <ul id="block-goods-grid">      
+           </ul> 
+           <nav class="page-buttons-nav">
+                      <ul id="page-buttons">
+                      
+                      </ul>     
+          </nav>   
+        </div>        
+    </div>
+
+    <footer>
+	
+					
+													
+    </footer>
+    
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script type="text/javascript" src="trackbar/jquery.trackbar.js"></script>
+<script src="js/script.js"></script>
+<script src="js/functions.js"></script>
+
+</body>
+</html>

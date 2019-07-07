@@ -1,0 +1,214 @@
+<div class="main">
+    <div class="wrap" id = "min-cart">
+        <div class="goods-min-cart">
+            <h3>Name of good</h3>
+            <p></p>
+            <p></p>
+            <button class="add-to-cart">Buy</button>
+        </div>
+        <div class="goods-min-cart">
+            <h3>Name of good</h3>
+            <p></p>
+            <p></p>
+            <button class="add-to-cart">Buy</button>
+        </div>
+        <div class="goods-min-cart">
+            <h3>Name of good</h3>
+            <p></p>
+            <p></p>
+            <button class="add-to-cart">Buy</button>
+        </div>
+        <div class="goods-min-cart">
+            <h3>Name of good</h3>
+            <p></p>
+            <p></p>
+            <button class="add-to-cart">Buy</button>
+        </div>
+        <div class="goods-min-cart">
+            <h3>Name of good</h3>
+            <p></p>
+            <p></p>
+            <button class="add-to-cart">Buy</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="footer">
+   <div class="wrap">
+           Auto Parts Shop 2019
+   </div>
+</div>
+
+------------------------------------------
+
+
+<div class="main">
+    <div class="content">
+    	<div class="content_top">
+    		<div class="heading">
+    		<h3>Feature Products</h3>
+    		</div>
+    		<div class="sort">
+    		<p>Sort by:
+    			<select>
+    				<option>Lowest Price</option>
+    				<option>Highest Price</option>
+    				<option>Lowest Price</option>
+    				<option>Lowest Price</option>
+    				<option>Lowest Price</option>
+    				<option>In Stock</option>  				   				
+    			</select>
+    		</p>
+    		</div>
+    		<div class="show">
+    		<p>Show:
+    			<select>
+    				<option>4</option>
+    				<option>8</option>
+    				<option>12</option>
+    				<option>16</option>
+    				<option>20</option>
+    				<option>In Stock</option>  				   				
+    			</select>
+    		</p>
+    		</div>
+    		<div class="page-no">
+    			<p>Result Pages:
+    			    <ul>
+    				<li><a href="#">1</a></li>
+    				<li class="active"><a href="#">2</a></li>
+    				<li><a href="#">3</a></li>
+    				<li>[<a href="#"> Next>>></a >]</li>
+    				</ul>
+    			</p>
+    		</div>
+    		<div class="clearfix"></div>
+    	</div>
+	    
+	</div>
+</div>
+
+.header {
+    width: 100%;
+    min-height: 80px;
+    background-color: cadetblue;
+    color: #fff;
+}
+
+.wrap {
+    width:85%;
+	margin:0 auto;
+}
+
+
+.footer   {
+    min-height: 200px;
+    width: 100%;
+    background-color: blueviolet;
+    color:#fff;
+    padding: 20px;
+    align-self: center;
+}
+
+.goods-min-cart {
+    width: 23%;
+    background: coral;
+    margin: 1%;
+    text-align: center;
+    padding: 10px;
+}
+
+#min-cart{
+    display: flex;
+    flex-direction: row;
+}
+
+.goods-min-cart img{
+    
+    max-width: 100%;
+}
+
+/*-- mobiles-page-starts-here --*/
+.main {
+	padding: 2em 2em;
+	background: #fff;
+	border: 1px solid #B9B9B9;
+	margin-bottom: 2em;
+}
+
+.content h2{ 
+	font-size:23px;
+	color:#6C6C6C;
+}
+
+
+.content_top{
+    height: 40px;
+	padding:10px 15px;
+    border:1px solid #EBE8E8;
+	border-radius:35px;
+	text-align: center
+}
+
+.heading{
+	float:left;
+	margin-right:10%;
+}
+.heading h3{
+	font-size:22px;
+	color:#602D8D;
+	text-transform:uppercase;
+}
+
+.sort,.show{       
+	float:left;
+	width:14%;
+	margin-left:1.6%;
+}
+
+.sort p,.show p{
+	display:inline;
+	font-size:0.8125em;
+	color: #333;
+}
+.sort select,.show select{
+	display:inline;
+	font-size:1.1em;
+	color: #333;
+	margin-left:2px;
+}
+.page-no{
+	float:right;
+}
+.page-no p{
+	display:inline;
+	font-size:0.8125em;
+	padding:0.3em 0;
+	color: #333;
+}
+.page-no ul{
+	display:inline;
+}
+.page-no li{
+	display:inline;
+}
+.page-no li a{
+	font-size:0.8125em;
+	color: #333;
+	line-height: 1.6em;
+	padding:5px 5px;
+}
+.page-no li a:hover,.page-no li.active{
+	color:#602D8D;
+	text-decoration:underline;
+}
+
+@media screen and (max-width: 320px) {
+    
+    .content_top {
+		padding: 12px 10px;
+	}
+}
